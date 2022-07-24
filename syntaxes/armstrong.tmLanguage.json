@@ -23,10 +23,6 @@
                "include":"#numeric"
             },
             {
-               "match":"(.\/\/.*|\/\/.*)",
-               "name":"comment.armstrong"
-            },
-            {
                "include":"#operators"
             },
             {
@@ -85,13 +81,20 @@
                      "name":"punctuation.armstrong"
                   }
                }
+            },
+            {
+               "include":"#multi_line_comment"
+            },
+            {
+               "match":"(\\s*\/\/.*)",
+               "name":"comment.armstrong"
             }
          ]
       },
       "controls":{
          "patterns":[
             {
-               "match":"(\\b(change|define|add|div|mult|sub|goto|gotoif|if|endif))",
+               "match":"(\\b(change|define|add|div|mult|sub|gotoif|goto|if|endif))",
                "name":"keyword.control.armstrong"
             }
          ]
@@ -100,7 +103,14 @@
          "patterns":[
             {
                "match":"(#)(.+)",
-               "name":"entity.name.function.armstrong"
+               "captures":{
+                  "1":{
+                     "name":"keyword.armstrong"
+                  },
+                  "2":{
+                     "name":"entity.name.function.armstrong"
+                  }
+               }
             }
          ]
       },
