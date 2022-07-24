@@ -1,7 +1,7 @@
 {
     "name": "armstrong",
     "displayName": "Armstrong",
-    "description": "A low level compiled programming language built for the Astro-8 microprocessor",
+    "description": "A low level compiled programming language built for the Astro-8 processor",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.68.0"
