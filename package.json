@@ -1,0 +1,25 @@
+{
+    "name": "armstrong",
+    "displayName": "Armstrong",
+    "description": "A low level compiled programming language built for the Astro-8 microprocessor",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.68.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "armstrong",
+            "aliases": ["Armstrong", "armstrong"],
+            "extensions": [".arm",".str",".armstrong",".as"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "armstrong",
+            "scopeName": "main.armstrong",
+            "path": "./syntaxes/armstrong.tmLanguage.json"
+        }]
+    }
+}
