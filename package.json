@@ -2,7 +2,9 @@
     "name": "armstrong",
     "displayName": "Armstrong",
     "description": "A low level compiled programming language built for the Astro-8 processor",
-    "version": "0.0.1",
+    "version": "0.0.3",
+    "publisher":"sam-astro",
+    "icon":"Armstrong-Icon.png",
     "engines": {
         "vscode": "^1.68.0"
     },

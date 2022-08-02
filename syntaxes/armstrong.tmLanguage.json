@@ -14,6 +14,10 @@
       "main":{
          "patterns":[
             {
+               "match":"(\\s*\\\/\\\/.*)",
+               "name":"comment.armstrong"
+            },
+            {
                "include":"#groupings"
             },
             {
@@ -45,7 +49,7 @@
                }
             },
             {
-               "match":"(\\$|\\@)(\\w+)",
+               "match":"(\\$|\\@|0x|0b)(\\w+)",
                "name":"entity.name.variable.armstrong"
             },
             {
@@ -81,13 +85,6 @@
                      "name":"punctuation.armstrong"
                   }
                }
-            },
-            {
-               "include":"#multi_line_comment"
-            },
-            {
-               "match":"(\\s*\/\/.*)",
-               "name":"comment.armstrong"
             }
          ]
       },
@@ -102,7 +99,7 @@
       "groupings":{
          "patterns":[
             {
-               "match":"(#)(.+)",
+               "match":"(#)(\\w+)",
                "captures":{
                   "1":{
                      "name":"keyword.armstrong"
@@ -135,11 +132,6 @@
                "match":"(,)",
                "name":"punctuation.armstrong"
             }
-         ]
-      },
-      "multi_line_comment__1":{
-         "patterns":[
-            
          ]
       },
       "numeric":{
