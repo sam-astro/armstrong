@@ -30,7 +30,7 @@
                "include":"#operators"
             },
             {
-               "begin":"(\\{)",
+               "begin":"(\\[)",
                "beginCaptures":{
                   "1":{
                      "name":"punctuation.armstrong"
@@ -41,7 +41,7 @@
                      "include":"#main__1"
                   }
                ],
-               "end":"(\\})",
+               "end":"(\\])",
                "endCaptures":{
                   "1":{
                      "name":"punctuation.armstrong"
@@ -56,14 +56,14 @@
                "begin":"(\\\")",
                "beginCaptures":{
                   "1":{
-                     "name":"text.armstrong"
+                     "name":"string.armstrong"
                   }
                },
-               "contentName":"text.armstrong",
+               "contentName":"string.armstrong",
                "end":"(\\\")",
                "endCaptures":{
                   "1":{
-                     "name":"text.armstrong"
+                     "name":"string.armstrong"
                   }
                }
             },
@@ -91,7 +91,7 @@
       "controls":{
          "patterns":[
             {
-               "match":"(\\b(change|define|add|div|mult|sub|gotoif|goto|if|endif))",
+               "match":"(\\b(change|define|add|div|mult|sub|gotoif|goto|if|endif|asm|array))",
                "name":"keyword.control.armstrong"
             }
          ]
