@@ -18,13 +18,17 @@
                "name":"comment.armstrong"
             },
             {
+               "match":"(\\s*)(\\$|\\@)(\\w+)",
+               "name":"entity.name.variable.armstrong"
+            },
+            {
+               "include":"#numeric"
+            },
+            {
                "include":"#groupings"
             },
             {
                "include":"#controls"
-            },
-            {
-               "include":"#numeric"
             },
             {
                "include":"#operators"
@@ -47,10 +51,6 @@
                      "name":"punctuation.armstrong"
                   }
                }
-            },
-            {
-               "match":"(\\$|\\@|0x|0b)(\\w+)",
-               "name":"entity.name.variable.armstrong"
             },
             {
                "begin":"(\\\")",
@@ -91,7 +91,7 @@
       "controls":{
          "patterns":[
             {
-               "match":"(\\b(change|define|add|div|mult|sub|gotoif|goto|if|endif|asm|array))",
+               "match":"(\\b(change|define|add|div|mult|sub|and|or|not|bsl|bsr|gotoif|goto|if|endif|asm|array))",
                "name":"keyword.control.armstrong"
             }
          ]
@@ -99,7 +99,7 @@
       "groupings":{
          "patterns":[
             {
-               "match":"(#)(\\w+)",
+               "match":"(#|&)(\\w+)",
                "captures":{
                   "1":{
                      "name":"keyword.armstrong"
@@ -137,7 +137,7 @@
       "numeric":{
          "patterns":[
             {
-               "match":"(\\b\\d+)",
+               "match":"(\\s*\\b(0x\\d+|0b\\d+|\\d+))",
                "name":"constant.numeric.armstrong"
             }
          ]
@@ -145,7 +145,7 @@
       "operators":{
          "patterns":[
             {
-               "match":"\\b(\\s*(\\+|->|<-|-|\\*|\\\/|==|<|>|!=|=|<=|>=|,|:|;)\\s*)",
+               "match":"\\b(\\s*(\\+|->|<-|-|\\s*\\*|\\\/|==|<|>|!=|=|<=|>=|,|:|;)\\s*)",
                "name":"keyword.operator.armstrong"
             }
          ]
