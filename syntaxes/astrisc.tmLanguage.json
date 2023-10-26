@@ -21,7 +21,7 @@
 			},
 			{
 				"match": "(\\s*)(\\$|\\@|\\_)(\\w+)",
-				"name": "entity.name.variable.astrisc"
+				"name": "entity.name.function.astrisc"
 			},
 			{
 				"include": "#numeric"
@@ -103,7 +103,7 @@
 		{
 			"patterns": [
 			{
-				"match": "(\\b(set|here|const|fetch|ain|bin|cin|ldia|ldib|sta|add|sub|mult|div|jmpz|jmpc|jmp|jreg|ldain|staout|ldlge|stlge|ldw|swp|swpc|pcr|bsl|bsr|and|or|not|vbuf|bnkc|bnk|ldwb|SET|HERE|CONST|FETCH|AIN|BIN|CIN|LDIA|LDIB|STAOUT|STA|ADD|SUB|MULT|DIV|JMPZ|JMPC|JMP|JREG|LDAIN|LDLGE|STLGE|SWP|SWPC|PCR|BSL|BSR|AND|OR|NOT|VBUF|BNKC|BNK|LDWB|LDW))",
+				"match": "(\\b(set|here|const|fetch|ain|bin|cin|ldia|ldib|add|sub|mult|div|jmpz|jmpc|jmp|jreg|ldain|staout|ldlge|stlge|ldw|swp|swpc|pcr|bsl|bsr|and|or|not|vbuf|bnkc|bnk|ldwb|sta|SET|HERE|CONST|FETCH|AIN|BIN|CIN|LDIA|LDIB|STAOUT|ADD|SUB|MULT|DIV|JMPZ|JMPC|JMP|JREG|LDAIN|LDLGE|STLGE|SWP|SWPC|PCR|BSL|BSR|AND|OR|NOT|VBUF|BNKC|BNK|LDWB|LDW|STA))",
 				"name": "keyword.control.astrisc"
 			}]
 		},
