@@ -1,10 +1,10 @@
 {
-    "name": "armstrong",
-    "displayName": "Armstrong",
-    "description": "A low level compiled programming language built for the Astro-8 processor",
-    "version": "0.0.6",
+    "name": "astrisc",
+    "displayName": "Astrisc",
+    "description": "The lowest level instructions for the Astro-8 processor",
+    "version": "0.0.4",
     "publisher":"sam-astro",
-    "icon":"Armstrong-Icon.png",
+    "icon":"Astrisc.png",
     "engines": {
         "vscode": "^1.68.0"
     },
@@ -13,15 +13,15 @@
     ],
     "contributes": {
         "languages": [{
-            "id": "armstrong",
-            "aliases": ["Armstrong", "armstrong"],
-            "extensions": [".arm",".str",".armstrong",".as"],
+            "id": "astrisc",
+            "aliases": ["Astrisc", "astrisc"],
+            "extensions": [".asm",".astrisc"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
-            "language": "armstrong",
-            "scopeName": "main.armstrong",
-            "path": "./syntaxes/armstrong.tmLanguage.json"
+            "language": "astrisc",
+            "scopeName": "main.asm",
+            "path": "./syntaxes/astrisc.tmLanguage.json"
         }]
     }
 }

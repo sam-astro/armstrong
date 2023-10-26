@@ -1,0 +1,167 @@
+{
+	"fileTypes": [
+		"astrisc"
+	],
+	"name": "astrisc",
+	"patterns": [
+		{
+			"include": "#main"
+		}
+	],
+	"scopeName": "main.asm",
+	"uuid": "1a383131-5079-4fc2-817f-f95580659cb5",
+	"repository":
+	{
+		"main":
+		{
+			"patterns": [
+			{
+				"match": "(\\s*,.*)",
+				"name": "comment.astrisc"
+			},
+			{
+				"match": "(\\s*)(\\$|\\@|\\_)(\\w+)",
+				"name": "entity.name.variable.astrisc"
+			},
+			{
+				"include": "#numeric"
+			},
+			{
+				"include": "#groupings"
+			},
+			{
+				"include": "#controls"
+			},
+			{
+				"include": "#operators"
+			},
+			{
+				"begin": "(\\{)",
+				"beginCaptures":
+				{
+					"1":
+					{
+						"name": "punctuation.astrisc"
+					}
+				},
+				"patterns": [
+				{
+					"include": "#main__1"
+				}],
+				"end": "(\\})",
+				"endCaptures":
+				{
+					"1":
+					{
+						"name": "punctuation.astrisc"
+					}
+				}
+			},
+			{
+				"begin": "(\\\")",
+				"beginCaptures":
+				{
+					"1":
+					{
+						"name": "text.astrisc"
+					}
+				},
+				"contentName": "text.astrisc",
+				"end": "(\\\")",
+				"endCaptures":
+				{
+					"1":
+					{
+						"name": "text.astrisc"
+					}
+				}
+			},
+			{
+				"begin": "(\\()",
+				"beginCaptures":
+				{
+					"1":
+					{
+						"name": "punctuation.astrisc"
+					}
+				},
+				"patterns": [
+				{
+					"include": "#main__3"
+				}],
+				"end": "(\\))",
+				"endCaptures":
+				{
+					"1":
+					{
+						"name": "punctuation.astrisc"
+					}
+				}
+			}]
+		},
+		"controls":
+		{
+			"patterns": [
+			{
+				"match": "(\\b(set|here|const|fetch|ain|bin|cin|ldia|ldib|sta|add|sub|mult|div|jmpz|jmpc|jmp|jreg|ldain|staout|ldlge|stlge|ldw|swp|swpc|pcr|bsl|bsr|and|or|not|vbuf|bnkc|bnk|ldwb|SET|HERE|CONST|FETCH|AIN|BIN|CIN|LDIA|LDIB|STAOUT|STA|ADD|SUB|MULT|DIV|JMPZ|JMPC|JMP|JREG|LDAIN|LDLGE|STLGE|SWP|SWPC|PCR|BSL|BSR|AND|OR|NOT|VBUF|BNKC|BNK|LDWB|LDW))",
+				"name": "keyword.control.astrisc"
+			}]
+		},
+		"groupings":
+		{
+			"patterns": [
+			{
+				"match": "(#|&)(.+)",
+				"captures":
+				{
+					"1":
+					{
+						"name": "keyword.astrisc"
+					},
+					"2":
+					{
+						"name": "entity.name.function.astrisc"
+					}
+				}
+			}]
+		},
+		"main__1":
+		{
+			"patterns": [
+			{
+				"include": "#main"
+			}]
+		},
+		"main__2":
+		{
+			"patterns": []
+		},
+		"main__3":
+		{
+			"patterns": [
+			{
+				"include": "#numeric"
+			},
+			{
+				"match": "(,)",
+				"name": "punctuation.astrisc"
+			}]
+		},
+		"numeric":
+		{
+			"patterns": [
+			{
+				"match": "(\\s*\\b(0x\\d+|0b\\d+|\\d+))",
+				"name": "constant.numeric.astrisc"
+			}]
+		},
+		"operators":
+		{
+			"patterns": [
+			{
+				"match": "\\b(\\s*(\\+|->|<-|-|\\s*\\*|\\/|==|<|>|!=|=|<=|>=|,|:|;)*)",
+				"name": "keyword.control.operator.astrisc"
+			}]
+		}
+	}
+}
