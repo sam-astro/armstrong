@@ -2,7 +2,7 @@
     "name": "astrisc",
     "displayName": "Astrisc",
     "description": "The lowest level instructions for the Astro-8 processor",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "publisher":"sam-astro",
     "icon":"Astrisc.png",
     "engines": {
@@ -15,7 +15,7 @@
         "languages": [{
             "id": "astrisc",
             "aliases": ["Astrisc", "astrisc"],
-            "extensions": [".asm",".astrisc"],
+            "extensions": [".asm",".astrisc",".asmc"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{

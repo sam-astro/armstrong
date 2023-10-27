@@ -102,10 +102,10 @@
 		"controls":
 		{
 			"patterns": [
-			{
-				"match": "(\\b(set|here|const|fetch|ain|bin|cin|ldia|ldib|add|sub|mult|div|jmpz|jmpc|jmp|jreg|ldain|staout|ldlge|stlge|ldw|swp|swpc|pcr|bsl|bsr|and|or|not|vbuf|bnkc|bnk|ldwb|sta|SET|HERE|CONST|FETCH|AIN|BIN|CIN|LDIA|LDIB|STAOUT|ADD|SUB|MULT|DIV|JMPZ|JMPC|JMP|JREG|LDAIN|LDLGE|STLGE|SWP|SWPC|PCR|BSL|BSR|AND|OR|NOT|VBUF|BNKC|BNK|LDWB|LDW|STA))",
-				"name": "keyword.control.astrisc"
-			}]
+				{
+					"match": "(\\b(set|here|const|fetch|ain|bin|cin|ldia|ldib|add|sub|mult|div|jmpz|jmpc|jmp|jreg|ldain|staout|ldlge|stlge|ldw|swpc|swp|pcr|bsl|bsr|and|or|not|vbuf|bnkc|bnk|ldwb|sta|SET|HERE|CONST|FETCH|AIN|BIN|CIN|LDIA|LDIB|STAOUT|ADD|SUB|MULT|DIV|JMPZ|JMPC|JMP|JREG|LDAIN|LDLGE|STLGE|SWPC|SWP|PCR|BSL|BSR|AND|OR|NOT|VBUF|BNKC|BNK|LDWB|LDW|STA))",
+					"name": "keyword.control.astrisc"
+				}]
 		},
 		"groupings":
 		{
